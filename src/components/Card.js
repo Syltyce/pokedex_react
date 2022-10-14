@@ -1,14 +1,17 @@
 import React from 'react';
+import Pokemon from './Pokemon';
 
-const Card = ({pokemon}) => {
-
+const Card = ({name, image}) => {
+    
     return (
-        <li className='card'>
-            <img src="pokemon.img" alt="" />
-            <div className='infos'>
-                <h2> Nom du pokemon </h2>
-            </div>
-        </li>
+        
+            <li className='card'>
+                <img src={image} alt={name} />
+                <div className='infos'> 
+                    <h2> {name} </h2>
+                </div>
+            </li>
+        
     );
 };
 
